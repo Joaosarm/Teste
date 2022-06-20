@@ -12,7 +12,7 @@ export default function Post(infos) {
       <img src={pictureURL} alt="Foto de perfil"></img>
       <PostInfos>
         <Link to={`/user/${userId}`} key={userId}>
-          <h4>{username || "Anonymous"}</h4>
+          <h4>{username }</h4>
         </Link>
         <p>{text}</p>
         <LinkBox>
