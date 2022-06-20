@@ -16,7 +16,7 @@ export default function Signin(){
         e.preventDefault();
         const promise = axios.post(POSTURL, signIn);
         promise.then(res => {
-            localStorage.setItem('token', res.data)
+            localStorage.setItem('token', res.data.token)
             setLoading(false);
             navigate("/timeline");
         })
